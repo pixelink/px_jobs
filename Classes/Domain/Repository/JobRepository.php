@@ -46,8 +46,6 @@ class JobRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
          * GROUP BY CATMM.uid_local
          */
 
-        $dataMapper = GeneralUtility::makeInstance(DataMapper::class);
-
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tx_pxjobs_domain_model_job');
         $rows = $queryBuilder
             ->select('CAT.title', 'CAT.uid')
@@ -81,7 +79,7 @@ class JobRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 
     public function findByCategory($category)
     {
-        $dataMapper = GeneralUtility::makeInstance(DataMapper::class);
+        $dataMapper = $this->objectManager->get(DataMapper::class);
 
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tx_pxjobs_domain_model_job');
         $rows = $queryBuilder

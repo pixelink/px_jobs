@@ -23,7 +23,7 @@ call_user_func(
             wizards.newContentElement.wizardItems.plugins {
                 elements {
                     jobs {
-                        icon = ' . \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('px_jobs') . 'Resources/Public/Icons/user_plugin_jobs.svg
+                        icon = ' . \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('px_jobs') . 'Resources/Public/Icons/user_plugin_jobs.svg
                         title = LLL:EXT:px_jobs/Resources/Private/Language/locallang_db.xlf:tx_px_jobs_domain_model_jobs
                         description = LLL:EXT:px_jobs/Resources/Private/Language/locallang_db.xlf:tx_px_jobs_domain_model_jobs.description
                         tt_content_defValues {

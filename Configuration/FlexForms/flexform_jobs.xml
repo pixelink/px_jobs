@@ -39,8 +39,7 @@
 							<size>10</size>
 							<maxitems>1</maxitems>
 							<treeConfig>
-								<parentField>parent</parentField>
-								<rootUid>10</rootUid>
+								<parentField>pid</parentField>
 								<appearance>
 									<expandAll>true</expandAll>
 									<showHeader>true</showHeader>

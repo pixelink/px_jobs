@@ -191,66 +191,66 @@ return [
             'label' => 'LLL:EXT:px_jobs/Resources/Private/Language/locallang_db.xlf:tx_pxjobs_domain_model_job.tasks',
             'config' => [
                 'type' => 'text',
+                'enableRichtext' => true,
                 'cols' => 40,
                 'rows' => 15,
                 'eval' => 'trim',
             ],
-            'defaultExtras' => 'richtext:rte_transform'
         ],
         'perspective' => [
             'exclude' => true,
             'label' => 'LLL:EXT:px_jobs/Resources/Private/Language/locallang_db.xlf:tx_pxjobs_domain_model_job.perspective',
             'config' => [
                 'type' => 'text',
+                'enableRichtext' => true,
                 'cols' => 40,
                 'rows' => 15,
                 'eval' => 'trim',
             ],
-            'defaultExtras' => 'richtext:rte_transform'
         ],
         'profile' => [
             'exclude' => true,
             'label' => 'LLL:EXT:px_jobs/Resources/Private/Language/locallang_db.xlf:tx_pxjobs_domain_model_job.profile',
             'config' => [
                 'type' => 'text',
+                'enableRichtext' => true,
                 'cols' => 40,
                 'rows' => 15,
                 'eval' => 'trim',
             ],
-            'defaultExtras' => 'richtext:rte_transform'
         ],
         'looking_for' => [
             'exclude' => true,
             'label' => 'LLL:EXT:px_jobs/Resources/Private/Language/locallang_db.xlf:tx_pxjobs_domain_model_job.looking_for',
             'config' => [
                 'type' => 'text',
+                'enableRichtext' => true,
                 'cols' => 40,
                 'rows' => 15,
                 'eval' => 'trim',
             ],
-            'defaultExtras' => 'richtext:rte_transform'
         ],
         'we_offer' => [
             'exclude' => true,
             'label' => 'LLL:EXT:px_jobs/Resources/Private/Language/locallang_db.xlf:tx_pxjobs_domain_model_job.we_offer',
             'config' => [
                 'type' => 'text',
+                'enableRichtext' => true,
                 'cols' => 40,
                 'rows' => 15,
                 'eval' => 'trim',
             ],
-            'defaultExtras' => 'richtext:rte_transform'
         ],
         'about_location' => [
             'exclude' => true,
             'label' => 'LLL:EXT:px_jobs/Resources/Private/Language/locallang_db.xlf:tx_pxjobs_domain_model_job.about_location',
             'config' => [
                 'type' => 'text',
+                'enableRichtext' => true,
                 'cols' => 40,
                 'rows' => 15,
                 'eval' => 'trim',
             ],
-            'defaultExtras' => 'richtext:rte_transform'
         ],
         'contact_person' => [
             'exclude' => true,
@@ -260,8 +260,7 @@ return [
                 'cols' => 40,
                 'rows' => 15,
                 'eval' => 'trim',
-                'enableRichtext' => true,
-                'richtextConfiguration' => 'exstarterkit',
+                'enableRichtext' => true
             ],
         ],
 

@@ -26,7 +26,7 @@ plugin.tx_pxjobs_jobs {
 }
 
 #/-----------------------------------\
-# Get Categorie Record
+# Get Category Record
 #\-----------------------------------/
 lib.categories = CONTENT
 lib.categories {
