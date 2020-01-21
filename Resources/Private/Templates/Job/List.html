@@ -1,0 +1,104 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+This Template is responsible for creating a table of domain objects.
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+Resources:
+Private:
+Templates:
+List.html: keep
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+<f:section name="main">
+    <div class="container-section space-before-none space-after-none padding-before-none padding-after-none bg-transparent pa-none">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+<f:if condition="{jobs -> f:count()} >= 1">
+                        <h2 id="jobcat{settings.categories}" class="job-cat-title"><f:cObject typoscriptObjectPath="lib.categories" data="{recordUid: settings.categories}" /></h2>
+                        <f:for each="{jobs}" as="job">
+                            <div class="container-section space-before-none space-after-medium padding-before-none padding-after-none bg-light-grey pa-medium">
+                                <section>
+                                    <div class="co-none">
+                                        <div class="row">
+                                            <div class="col-md-12 col-xs-12">
+                                                <div
+                                                        class="frame-layout-0 frame frame-default frame-type-header">
+                                                    <header>
+                                                        <div class="headline h3 ">{job.location}</div>
+                                                    </header>
+                                                </div>
+                                                <div
+                                                        class="frame-layout-0 frame frame-default frame-type-header">
+                                                    <header>
+                                                        <div class="headline h2 ">{job.title}
+                                                        </div>
+                                                        <div class="subheader h3 ">{job.subtitle}</div>
+                                                    </header>
+                                                </div>
+                                                <div>
+                                                    <div class="row space-before-none space-after-none padding-before-none padding-after-none bg-transparent pa-none">
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-header"></div>
+                                                        <div class="col-md-6 col-sm-6 col-xs-12 ">
+                                                            <f:if condition="{job.workTime}">
+                                                                <div
+                                                                        class="frame-layout-0 frame frame-default space-after-small frame-type-texticon">
+                                                                    <div class="texticon">
+                                                                        <div class="inner-wrap pa-none color-default bg-transparent icon-left">
+                                                                            <div class="icon-wrap">
+                                                                                <div class="ex-icon" style="width:60px; float: left;"><span
+                                                                                        class="icon-type-18 color-dark-grey bg-transparent icon-small"></span>
+                                                                                </div>
+                                                                                <div class="texticon-content" style="padding-top: 5px;"><p>
+                                                                                    {job.workTime}</p></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </f:if>
+                                                            <f:if condition="{job.jobStart}">
+                                                                <div
+                                                                        class="frame-layout-0 frame frame-default frame-type-texticon">
+                                                                    <div class="texticon">
+                                                                        <div class="inner-wrap pa-none color-default bg-transparent icon-left">
+                                                                            <div class="icon-wrap">
+                                                                                <div class="ex-icon" style="width:60px; float: left;"><span
+                                                                                        class="icon-type-21 color-dark-grey bg-transparent icon-small"></span>
+                                                                                </div>
+                                                                                <div class="texticon-content" style="padding-top: 5px;"><span
+                                                                                        class="editorTitle1">
+                                                                                    {job.jobStart}</span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </f:if>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-6 col-xs-12 ">
+                                                            <div
+                                                                    class="frame-layout-0 frame frame-default frame-type-text">
+                                                                <div>
+                                                                    <p
+                                                                            class="text-right"><span class="btn-wrap">
+											<f:link.action pageUid="{settings.detail_page}" action="show" class="btn btn-primary arrow-right"
+                                                           arguments="{job : job}">Weitere Infomationen</f:link.action>
+										</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </f:for>
+</f:if>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</f:section>
+</html>

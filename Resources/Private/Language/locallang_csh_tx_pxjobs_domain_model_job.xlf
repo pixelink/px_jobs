@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-08-31T13:44:31Z" product-name="px_jobs">
+		<header/>
+		<body>
+			<trans-unit id="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="subtitle.description">
+				<source>subtitle</source>
+			</trans-unit>
+			<trans-unit id="location.description">
+				<source>location</source>
+			</trans-unit>
+			<trans-unit id="job_start.description">
+				<source>jobStart</source>
+			</trans-unit>
+			<trans-unit id="work_time.description">
+				<source>workTime</source>
+			</trans-unit>
+			<trans-unit id="tasks.description">
+				<source>tasks</source>
+			</trans-unit>
+			<trans-unit id="profile.description">
+				<source>profile</source>
+			</trans-unit>
+			<trans-unit id="perspective.description">
+				<source>perspective</source>
+			</trans-unit>
+			<trans-unit id="looking_for.description">
+				<source>lookingFor</source>
+			</trans-unit>
+			<trans-unit id="we_offer.description">
+				<source>weOffer</source>
+			</trans-unit>
+			<trans-unit id="contact_person.description">
+				<source>contactPerson</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

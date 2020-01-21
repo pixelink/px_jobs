@@ -1,0 +1,19 @@
+{
+    "name": "pixelink/px-jobs",
+    "type": "typo3-cms-extension",
+    "description": "Jobverwaltung",
+    "authors": [
+        {
+            "name": "Benjamin Riezler",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pixelink\\PxJobs\\": "Classes"
+        }
+    }
+}

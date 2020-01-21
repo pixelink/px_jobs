@@ -1,0 +1,189 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+This Template is responsible for displaying a single view for a domain object
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+Resources:
+Private:
+Templates:
+Show.html: keep
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+<f:section name="main">
+    <!-- Header start -->
+    <div class="container-section space-before-extra-large bg-transparent pa-none">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <div id="c7569"
+                             class="frame-layout-0 frame frame-default frame-type-header ">
+                            <header><h1 class="headline color-primary ">{job.title}</h1></header>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Header end -->
+    <!-- Info row start -->
+    <div class="container-section space-before-medium space-after-medium padding-before-extra-small padding-after-extra-small bg-light-grey pa-none">
+        <section class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <div style="padding: 10px;">
+                            <div class="row bg-transparent pa-none">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-header"></div>
+                                <div class="col-md-5 col-sm-6 col-xs-12 ">
+                                    <div id="c7564"
+                                         class="frame-layout-0 frame frame-default frame-type-header ">
+                                        <header>
+                                            <div class="headline h4 ">{job.location}
+                                            </div>
+                                        </header>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-12 ">
+                                    <div id="c7565"
+                                         class="frame-layout-0 frame frame-default frame-type-header ">
+                                        <header>
+                                            <div class="headline h4 ">{job.workTime}</div>
+                                            <f:if condition="{job.workTimeAdditional}">
+                                                <div class="subheader h5 ">{job.workTimeAdditional}</div>
+                                            </f:if>
+                                        </header>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-2 col-xs-12 ">
+                                    <div id="c7566"
+                                         class="frame-layout-0 frame frame-default frame-type-header ">
+                                        <header>
+                                            <div class="headline h4 ">{job.jobStart}</div>
+                                            <f:if condition="{job.jobStartAdditional}">
+                                                <div class="subheader h5">{job.jobStartAdditional}</div>
+                                            </f:if>
+                                        </header>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Info row end -->
+    <!-- Content start -->
+    <div class="container-section space-after-medium bg-transparent pa-none">
+        <section class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <div class="">
+                            <div class="row bg-transparent">
+                                <div class="col-md-7 col-sm-7 col-xs-12 ">
+                                    <f:if condition="{job.lookingFor}">
+                                        <div
+                                                class="frame-layout-0 frame frame-default frame-type-bullets space-after-medium ">
+                                            <header>
+                                                <div class="headline h2 ">Was suchen wir</div>
+                                            </header>
+                                            <div class="bullet-container bullet-color-default">
+                                                <f:format.html>{job.lookingFor}</f:format.html>
+                                            </div>
+                                        </div>
+                                    </f:if>
+                                    <f:if condition="{job.tasks}">
+                                        <div
+                                                class="frame-layout-0 frame frame-default frame-type-bullets space-after-medium ">
+                                            <header>
+                                                <div class="headline h2 ">Ihre Aufgaben</div>
+                                            </header>
+                                            <div class="bullet-container bullet-color-default">
+                                                <f:format.html>{job.tasks}</f:format.html>
+                                            </div>
+                                        </div>
+                                    </f:if>
+                                    <f:if condition="{job.weOffer}">
+                                        <div
+                                                class="frame-layout-0 frame frame-default frame-type-bullets space-after-medium ">
+                                            <header>
+                                                <div class="headline h2 ">Was bieten wir</div>
+                                            </header>
+                                            <div class="bullet-container bullet-color-default">
+                                                <f:format.html>{job.weOffer}</f:format.html>
+                                            </div>
+                                        </div>
+                                    </f:if>
+                                    <f:if condition="{job.profile}">
+                                        <div
+                                                class="frame-layout-0 frame frame-default frame-type-bullets space-after-medium ">
+                                            <header>
+                                                <div class="headline h2 ">Ihr Profil</div>
+                                            </header>
+                                            <div class="bullet-container bullet-color-default">
+                                                <f:format.html>{job.profile}</f:format.html>
+                                            </div>
+                                        </div>
+                                    </f:if>
+                                    <f:if condition="{job.perspective}">
+                                        <div
+                                                class="frame-layout-0 frame frame-default frame-type-bullets ">
+                                            <header>
+                                                <div class="headline h2 ">Ihre Perspektiven</div>
+                                            </header>
+                                            <div class="bullet-container bullet-color-default">
+                                                <f:format.html>{job.perspective}</f:format.html>
+                                            </div>
+                                        </div>
+                                    </f:if>
+                                    <f:if condition="{job.aboutLocation}">
+                                        <div
+                                                class="frame-layout-0 frame frame-default frame-type-bullets ">
+                                            <header>
+                                                <div class="headline h2 ">Örtlichkeit</div>
+                                            </header>
+                                            <div class="bullet-container bullet-color-default">
+                                                <f:format.html>{job.aboutLocation}</f:format.html>
+                                            </div>
+                                        </div>
+                                    </f:if>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-12 col-sm-offset-1 ">
+                                    <div class="container-section bg-light-grey pa-none">
+                                        <section>
+                                            <div class="container-no-padding">
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-header"></div>
+                                                    <div class="col-md-12 col-xs-12">
+                                                        <div
+                                                                class="frame-layout-0 frame frame-default frame-type-text ">
+                                                            <div class="inner-wrap bg-transparent pa-extra-small color-default">
+                                                                <f:format.html>{job.contactPerson}</f:format.html>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                                class="frame-layout-0 frame frame-default frame-type-text space-before-medium ">
+                            <div class="inner-wrap bg-transparent pa-none color-default aos-init" data-aos="">
+                                <p><span
+                                        class="btn-wrap">
+                                <f:link.page pageUid="{settings.list_page}" class="btn btn-default arrow-left">Zurück zur Übersicht</f:link.page></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Content end -->
+</f:section>
+</html>

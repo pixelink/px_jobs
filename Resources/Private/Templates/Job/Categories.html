@@ -1,0 +1,40 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+This Template is responsible for creating a table of domain objects.
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+Resources:
+Private:
+Templates:
+List.html: keep
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+<f:section name="main">
+    <div class="container-section space-before-none space-after-none padding-before-none padding-after-none bg-transparent pa-none">
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <div class="jobs__wrapper">
+                            <div class="jobs clearfix">
+                                <f:for each="{openJobs}" as="job_category" iteration="iterator">
+                                    <div class="jobs__item">
+                                        <a href="#jobcat{job_category.uid}" class="jobs__link">
+                                            <span class="jobs__title">{job_category.title} <br/></span>
+                                        </a>
+                                        <span class="jobs__available">
+                                            <a href="#jobcat{job_category.uid}" class="jobs__link">
+                                            Offene Stellen: {job_category.count}
+                                            </a>
+                                        </span>
+                                    </div>
+                                </f:for>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    </div>
+</f:section>
+</html>

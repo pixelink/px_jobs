@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-08-31T16:09:53Z" product-name="px_jobs">
+		<header/>
+		<body>
+			<trans-unit id="tx_pxjobs_domain_model_job">
+				<source>Job</source>
+			</trans-unit>
+			<trans-unit id="tx_pxjobs_domain_model_job.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_pxjobs_domain_model_job.subtitle">
+				<source>Subtitle</source>
+			</trans-unit>
+			<trans-unit id="tx_pxjobs_domain_model_job.location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="tx_pxjobs_domain_model_job.job_start">
+				<source>Job Start</source>
+			</trans-unit>
+			<trans-unit id="tx_pxjobs_domain_model_job.job_start_additional">
+				<source>Job Start Additional</source>
+			</trans-unit>
+			<trans-unit id="tx_pxjobs_domain_model_job.work_time">
+				<source>Work Time</source>
+			</trans-unit>
+			<trans-unit id="tx_pxjobs_domain_model_job.work_time_additional">
+				<source>Work Time Additional</source>
+			</trans-unit>
+			<trans-unit id="tx_pxjobs_domain_model_job.tasks">
+				<source>Tasks</source>
+			</trans-unit>
+			<trans-unit id="tx_pxjobs_domain_model_job.perspective">
+				<source>Perspective</source>
+			</trans-unit>
+			<trans-unit id="tx_pxjobs_domain_model_job.profile">
+				<source>Profile</source>
+			</trans-unit>
+			<trans-unit id="tx_pxjobs_domain_model_job.looking_for">
+				<source>Looking For</source>
+			</trans-unit>
+			<trans-unit id="tx_pxjobs_domain_model_job.we_offer">
+				<source>We Offer</source>
+			</trans-unit>
+			<trans-unit id="tx_pxjobs_domain_model_job.about_location">
+				<source>About Location</source>
+			</trans-unit>
+			<trans-unit id="tx_pxjobs_domain_model_job.contact_person">
+				<source>Contact Person</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
