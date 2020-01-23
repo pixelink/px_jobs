@@ -39,7 +39,7 @@
 							<size>10</size>
 							<maxitems>1</maxitems>
 							<treeConfig>
-								<parentField>pid</parentField>
+								<parentField>parent</parentField>
 								<appearance>
 									<expandAll>true</expandAll>
 									<showHeader>true</showHeader>
